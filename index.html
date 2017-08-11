@@ -195,6 +195,78 @@ form {
     height: 300px;
     width: 300px;
 }
+
+#diamond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: red;
+    position: relative;
+    top: -50px;
+}
+
+#diamond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: red;
+}
+
+object {
+    text-align: center;
+}
+h5{
+text-align: center;
+margin-top: -200px !important;
+
+}
+
+
+
+
+h5{
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+h5:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+h5 a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -231,8 +303,23 @@ form {
             <div class="col s12">
                 <div class="main" id="home">
                     <section style="background-color:#D3D3D3">
-                        <!--                         <center><img id="po" src="assets/images/1.png"></center>
- -->
+                     
+                        <div class="row">
+                            <div class="col s3"></div>
+                            <div class="col s6">
+                                <center>
+                                    <object>
+                                        <embed src="assets/images/logo.svg" width="85%" height="85%"></embed>
+                                    </object>
+                                </center>
+                            </div>
+                            <div class="col s3"></div>
+                        </div>
+                        <div class="row">
+                        <div class="col s12">
+                        <center><h5>WEB DEVELOPMENT<span>|</span></h5></center>
+                        </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -289,10 +376,11 @@ form {
                             <div class="row">
                                 <div class="col s12">
                                     <h4 class="port">My Work</h4>
+                                    <div id="diamond">
+                                    </div>
                                 </div>
                             </div>
                         </center>
-                        
                     </section>
                 </div>
             </div>
@@ -412,7 +500,7 @@ form {
         $('.slider').slider();
         $('.modal').modal();
         $('.carousel').carousel();
-        $('.materialboxed').materialbox();
+
 
     });
     </script>
