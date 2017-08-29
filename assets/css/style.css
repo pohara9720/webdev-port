@@ -1,4 +1,4 @@
-
+/*
 #nav{
 	height: 70px;
 }
@@ -10,4 +10,256 @@ height: 1000px;
 }
 #page3{
 height: 1000px;
+}*/
+<style>
+body,
+html,
+.main {
+    height: 100%;
+    /*background-color: white;
+    width: 100%;*/
 }
+
+section {
+    min-height: 110%;
+}
+
+.row {
+    border: none;
+}
+
+#header {
+    position: fixed;
+    width: 100% !important;
+    top: 0px;
+    background-color: white !important;
+    height: 50px !important;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.smooth {
+    color: black !important;
+}
+
+#footer {
+    position: fixed;
+    width: 100% !important;
+    bottom: 0px;
+    background-color: white !important;
+    height: 50px !important;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+nav ul {
+    margin-bottom: 10;
+    line-height: 50px;
+    color: #808080;
+}
+
+#list {
+    margin-left: 425px !important;
+}
+
+#footlist {
+    margin-left: 500px !important;
+}
+
+#Copyright {
+    font-size: 10px !important;
+}
+
+
+
+.container {
+    width: 95% !important;
+    background-color: white !important;
+}
+
+.brand-logo {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+#po {
+    width: 50%;
+    margin-top: 125px;
+}
+
+#arrow {
+    margin-bottom: 100px !important;
+}
+
+#filler {
+    width: 300px;
+    margin-top: 100px;
+}
+
+#aboutme {
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    font-size: 10px;
+    color: #C0C0C0;
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 10px;
+}
+
+h3 {
+    margin-top: 120px !important;
+    margin-left: 15px !important;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 1px 1px 1px white;
+}
+
+h4 {
+    margin-top: 120px !important;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 75px !important;
+}
+
+.port {
+    margin-top: 70px !important;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 75px !important;
+    margin-bottom: -20px;
+}
+
+.cap {
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+#serv {
+    margin-top: 70px !important;
+}
+
+form {
+    margin-top: 90px;
+}
+
+.slider.slides {
+    position: static !important;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+
+
+#modal1,
+.modal-footer {
+    background-color: #D3D3D3 !important;
+    text-align: center;
+}
+
+.conList {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.pServ {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.aIcon {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.fontS {
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 150px;
+    margin-top: -10px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    text-decoration-line: underline;
+}
+
+#summary {
+    font-size: 20px;
+}
+/*
+.card {
+    height: 300px;
+    width: 300px;
+}*/
+
+
+object {
+    text-align: center;
+}
+h5{
+text-align: center;
+margin-top: -200px !important;
+margin-left: 30px !important;
+
+}
+
+
+
+
+h5{
+ letter-spacing: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+h5:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+h5 a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+</style>
