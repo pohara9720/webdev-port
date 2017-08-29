@@ -13,7 +13,7 @@
     .st1 {
         fill-rule: evenodd;
         clip-rule: evenodd;
-        fill: #4B0082;
+        fill: black;
         stroke: #D3D3D3;
         stroke-width: 3;
         stroke-linecap: round;
@@ -29,7 +29,7 @@
     }
 
     .st3 {
-        fill: #4B0082;
+        fill: black;
         stroke: #D3D3D3;
         stroke-width: 3;
         stroke-linecap: round;

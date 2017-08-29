@@ -273,7 +273,8 @@ span {
 .project{
     height: 300px;
     width: 350px;
-}
+/*    opacity: .5;
+*/}
 .back{
     height: 350px;
 }
@@ -284,9 +285,9 @@ span {
     top: 0;
     z-index:1;
 
-    -webkit-animation: snow 50s linear infinite;
+    -webkit-animation: snow 80s linear infinite;
     
-    animation: snow 50s linear infinite;
+    animation: snow 80s linear infinite;
 }
 
 
@@ -295,6 +296,79 @@ span {
   100% { background-position: 0px 1222px; }
 }
 
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+
+/*container{
+    width: 90% !important;
+    height: 90% !important;
+}*/
+#list {
+    margin-left: 25px !important;
+}
+.smooth {
+    color: #4B0082 !important;
+    font-weight: bold;
+    font-size: 10px;
+}
+h5 {
+    text-align: center;
+    margin-left: 0px !important; 
+    margin-top: -200px !important;
+    font-size: 10px !important;
+    color: #D3D3D3;
+}
+object{
+    margin-top: -300px !important;
+    margin-left: -20px !important;
+}
+.fontS {
+    font-size: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    
+    margin-top: -10px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    text-decoration-line: underline;
+    color: #f0ead6
+}
+nav{
+    position: fixed;
+}
+#filler{
+    height: 200px;
+    width: 200px;
+    align-content: center;
+}
+#header {
+    position: fixed;
+    width: 100% !important;
+    top: 0px;
+    background-color: #D3D3D3 !important;
+    height: 50px !important;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+h3 {
+    font-size: 25px !important;
+    margin-top: 50px !important;
+    margin-left: 15px !important;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: #f0ead6;
+}
+#serv{
+    margin-left: 15px;
+    margin-right: -35px;
+}
+.fontS{
+    margin-left: 0px;
+}
+
+}
 
 </style>
 <!DOCTYPE html>
@@ -331,17 +405,17 @@ span {
         <div class="row">
             <div class="col s12">
                 <div class="main" id="home">
-                    <section id="snow" style="background-color:#4B0082">
+                    <section id="snow" style="background-color:black">
                         <div class="row">
-                            <div class="col s3"></div>
-                            <div class="col s6">
+                            <div class="col l3"></div>
+                            <div class="col l6 s12">
                                 <center>
                                     <object>
                                         <embed src="assets/images/logo.svg" width="85%" height="85%"></embed>
                                     </object>
                                 </center>
                             </div>
-                            <div class="col s3"></div>
+                            <div class="col l3"></div>
                         </div>
                         <div class="row">
                             <div class="col s12">
@@ -358,10 +432,10 @@ span {
                 <div class="main" id="services">
                     <section id="snow" style="background-color:#4B0082">
                         <div class="row">
-                            <div class="col s6">
+                            <div class="col l6 s10">
                                 <h3>Hi, my name is Patrick. I create responsive, functional websites for personal and business needs. Here are a few services I provide --> </h3>
                             </div>
-                            <div id="serv" class="col s6">
+                            <div id="serv" class="col l6 s10">
                                 <ul>
                                     <li class="fontS"><img class="aIcon" src="assets/images/design.png"> WEB DESIGN</li>
                                     <p class="pServ">Websites are built from scratch and allow endless possibilities to make a completely customizeable experience.</p>
@@ -383,15 +457,15 @@ span {
                 <div class="main" id="about">
                     <section id="snow" style="background-color:#4B0082">
                         <div class="row">
-                            <div class="col s6">
+                            <div class="col l6 s12">
                                 <center> <img id="filler" src="assets/images/me.jpg"></center>
                             </div>
-                            <div id="aboutme" class="col s5">
+                            <div id="aboutme" class="col l5 s10">
                                 <h1>Patrick O'Hara</h1>
                                 <!-- <h2>one</h2> -->
                                 <p id="summary" class="flow-text">I am a Freelance Web Developer based out of Scottsdale, AZ. Since obtaining my Bachelors Degree from Arizona State, and my post graduate education from the University of Arizona I have immersed myself in the world of web development. Programming has allowed me to create solutions and solve problems using technology. I have a wide range of interests and skills. As a Full Stack Developer I can create a beautiful, completely customizeable front end design as well as handle all the back end functionality to make your application or website extremely functional. </p>
                             </div>
-                            <div class="col s1 l"></div>
+                            <div class="col s1 l1"></div>
                         </div>
                     </section>
                 </div>
@@ -409,24 +483,24 @@ span {
                             </div>
                         </center>
                         <center><div class="row">
-                            <div class="col s4">
+                            <div class="col l4 s10">
                                 <img class="project" src="assets/images/pantry.png">
                             </div>
-                            <div class="col s4">
+                            <div class="col l4 s10">
                                 <img class="project" src="assets/images/volunteer.png">
                             </div>
-                            <div class="col s4">
+                            <div class="col l4 s10">
                                 <img class="project" src="assets/images/cheyna.png">
                             </div>
                         </div>
                         <div class="back row">
-                            <div class="col s4">
+                            <div class="col l4 s10">
                                 <img class="project" src="assets/images/webscrape.png">
                             </div>
-                            <div class="col s4">
+                            <div class="col l4 s10">
                                 <img class="project" src="assets/images/friend.png">
                             </div>
-                            <div class="col s4">
+                            <div class="col l4 s10">
                                 <img class="project" src="assets/images/mrsleepy.png">
                             </div>
                         </div></center>
@@ -446,17 +520,17 @@ span {
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col s1">
+                                <div class="col l1 s12">
                                 </div>
-                                <div class="col s2">
+                                <div class="col l2 s12">
                                     <a href="tel:16235708427"><img class="icon" src="assets/images/phone.png"></a>
                                     <p class="conList">Phone</p>
                                 </div>
-                                <div class="col s2">
+                                <div class="col l2 s12">
                                     <a href="mailto:pat.oharaiv@gmail.com"><img class="icon" src="assets/images/email.png"></a>
                                     <p class="conList">Email</p>
                                 </div>
-                                <div class="col s2">
+                                <div class="col l2 s12">
                                     <a class="modal-trigger" href="#modal1"> <img class="icon" src="assets/images/bulb.png"></a>
                                     <p class="conList">Explain Your Idea</p>
                                     <div id="modal1" class="modal modal-fixed-footer">
@@ -491,11 +565,11 @@ span {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col s2">
+                                <div class="col l2 s12">
                                     <a href="https://www.linkedin.com/in/patoharaiv/"><img class="icon" src="assets/images/address-book.png"></a>
                                     <p class="conList">LinkedIn</p>
                                 </div>
-                                <div class="col s2">
+                                <div class="col l2 s12">
                                     <a href="https://github.com/pohara9720"><img class="icon" src="assets/images/gitlogo.png"></a>
                                     <p class="conList">Github</p>
                                 </div>
