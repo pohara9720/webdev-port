@@ -3,7 +3,7 @@ body,
 html,
 .main {
     height: 100%;
-    background-color: #D3D3D3;
+    background-color: white;
     width: 100%;
 }
 
@@ -20,16 +20,15 @@ section {
     position: fixed;
     width: 100% !important;
     top: 0px;
-    background-color: #D3D3D3 !important;
+    background-color: white !important;
     height: 50px !important;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-
 }
 
 .smooth {
-    color: #4B0082 !important;
+    color: black !important;
     font-weight: bold;
 }
 
@@ -37,7 +36,7 @@ section {
     position: fixed;
     width: 100% !important;
     bottom: 0px;
-    background-color: #D3D3D3 !important;
+    background-color: white !important;
     height: 50px !important;
     border: 0;
     -webkit-box-shadow: none;
@@ -92,7 +91,8 @@ nav ul {
 
 #filler {
     height: 500px;
-    width: 500px;
+    width: 400px;
+    border-radius: 50%;
     margin-top: 100px;
 }
 
@@ -101,13 +101,14 @@ nav ul {
     text-align: center;
     float: left;
     font-size: 10px;
-    color: #C0C0C0;
+    color: black;
 }
 
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    color:#D3D3D3;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px white;
 }
 
 h2 {
@@ -119,14 +120,14 @@ h3 {
     margin-left: 15px !important;
     font-family: 'Quicksand', sans-serif;
     text-shadow: 2px 2px 2px black;
-    color: #f0ead6;
+    color: black;
 }
 
 h4 {
     margin-top: 120px !important;
     font-family: 'Quicksand', sans-serif;
     font-size: 75px !important;
-    color:#D3D3D3;
+    color: #D3D3D3;
 }
 
 .port {
@@ -134,14 +135,14 @@ h4 {
     font-family: 'Quicksand', sans-serif;
     font-size: 75px !important;
     margin-bottom: 20px;
-    color:#D3D3D3;
+    color: black;
 }
 
 .cap {
     letter-spacing: 3px;
     font-size: 20px;
     font-family: 'Fjalla One', sans-serif;
-    color:#D3D3D3;
+    color: #D3D3D3;
 }
 
 
@@ -167,19 +168,26 @@ form {
 
 #modal1,
 .modal-footer {
-    background-color: #D3D3D3 !important;
+    background-color: grey !important;
     text-align: center;
+    margin-bottom: -100px;
+    height: 400px;
+}
+#submit{
+    background-color: black;
+    color: white;
 }
 
 .conList {
     font-family: 'Quicksand', sans-serif;
+    color: white;
 }
 
 .pServ {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
     margin-top: 0px;
-    color: #f0ead6;
+    color: black;
 }
 
 .aIcon {
@@ -196,13 +204,27 @@ form {
     letter-spacing: 3px;
     word-spacing: 1px;
     text-decoration-line: underline;
-    color: #f0ead6
+    color: black;
 }
 
 #summary {
     font-size: 20px;
-    color:#D3D3D3;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    letter-spacing: 1px;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
 }
+#modal2{
+    color:white !important;
+    background-color: black;
+}
+#h4{
+    margin-top: 20px !important;
+}
+
+
+
 
 
 /*
@@ -270,106 +292,186 @@ span {
 ::selection {
     background: black;
 }
-.project{
+
+.project {
     height: 300px;
     width: 350px;
-/*    opacity: .5;
-*/}
-.back{
+    /*    opacity: .5;
+*/
+}
+
+.back {
     height: 350px;
 }
-#snow{
+
+#snow {
     background: none;
     background-image: url(http://hk.celavi.com/thesuit/uploads/2015/11/feather.png), url(http://hk.celavi.com/thesuit/uploads/2015/11/feather.png), url(http://hk.celavi.com/thesuit/uploads/2015/11/feather.png);
     left: 0;
     top: 0;
-    z-index:1;
+    z-index: 1;
 
     -webkit-animation: snow 80s linear infinite;
-    
+
     animation: snow 80s linear infinite;
 }
 
 
 @-webkit-keyframes snow {
-    0%   { background-position: 0px; }
-  100% { background-position: 0px 1222px; }
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 0px 1222px;
+    }
 }
 
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+.nav {
+    width: 980px;
+    margin-left: 150px !important;
+    margin-top: -100px !important;
+    margin: 100px auto;
+    list-style: none;
+    /*    position: relative;
+*/
+}
 
-/*container{
+.nav li {
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, .5);
+    margin: 12px;
+    transition: all 1s ease;
+}
+
+.nav li img {
+    margin: -100px 0px 0px 0px;
+    height: 310px;
+    width: 400px;
+    margin-bottom: -80px !important;
+    transition: all 1s ease;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav li a:before {
+    content: attr(title);
+    position: relative;
+    /*改绝对定位为相对定位*/
+    left: 80px;
+    top: 200px;
+    transition: all 1s ease;
+}
+
+.nav li:hover {
+    border: 6px solid #333;
+    box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, .5);
+}
+
+.nav li:hover img {
+    margin-left: -150px;
+    margin-top: -140px;
+    cursor: pointer;
+}
+
+.nav li:hover a:before {
+    top: 60px;
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /*container{
     width: 90% !important;
     height: 90% !important;
 }*/
-#list {
-    margin-left: 25px !important;
-}
-.smooth {
-    color: #4B0082 !important;
-    font-weight: bold;
-    font-size: 10px;
-}
-h5 {
-    text-align: center;
-    margin-left: 0px !important; 
-    margin-top: -200px !important;
-    font-size: 10px !important;
-    color: #D3D3D3;
-}
-object{
-    margin-top: -300px !important;
-    margin-left: -20px !important;
-}
-.fontS {
-    font-size: 10px;
-    font-family: 'Fjalla One', sans-serif;
-    
-    margin-top: -10px;
-    letter-spacing: 3px;
-    word-spacing: 1px;
-    text-decoration-line: underline;
-    color: #f0ead6
-}
-nav{
-    position: fixed;
-}
-#filler{
-    height: 200px;
-    width: 200px;
-    align-content: center;
-}
-#header {
-    position: fixed;
-    width: 100% !important;
-    top: 0px;
-    background-color: #D3D3D3 !important;
-    height: 50px !important;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    .nav {
+        display: none;
+    }
+    #list {
+        margin-left: 25px !important;
+    }
+    .smooth {
+        color: black !important;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    h5 {
+        text-align: center;
+        margin-left: 0px !important;
+        margin-top: -200px !important;
+        font-size: 10px !important;
+        color: #D3D3D3;
+    }
+    object {
+        margin-top: -300px !important;
+        margin-left: -20px !important;
+    }
+    .fontS {
+        font-size: 10px;
+        font-family: 'Fjalla One', sans-serif;
 
-}
-h3 {
-    font-size: 25px !important;
-    margin-top: 50px !important;
-    margin-left: 15px !important;
-    font-family: 'Quicksand', sans-serif;
-    text-shadow: 2px 2px 2px black;
-    color: #f0ead6;
-}
-#serv{
-    margin-left: 15px;
-    margin-right: -35px;
-}
-.fontS{
-    margin-left: 0px;
-}
+        margin-top: -10px;
+        letter-spacing: 3px;
+        word-spacing: 1px;
+        text-decoration-line: underline;
+        color: white;
+    }
+    nav {
+        position: fixed;
+    }
+    #filler {
+        height: 300px;
+        width: 250px;
+        border-radius: 50%;
+        align-content: center;
+    }
+    #header {
+        position: fixed;
+        width: 100% !important;
+        top: 0px;
+        background-color: #D3D3D3 !important;
+        height: 50px !important;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    h3 {
+        font-size: 25px !important;
+        margin-top: 50px !important;
+        margin-left: 15px !important;
+        font-family: 'Quicksand', sans-serif;
+        text-shadow: 2px 2px 2px black;
+        color: white;
+    }
+    #serv {
+        margin-left: 15px;
+        margin-right: -35px;
+    }
+    .fontS {
+        margin-left: 0px;
+    }
+    #summary {
 
+        font-size: 20px;
+        color: #D3D3D3;
+        text-align: center;
+        margin-right: -35px;
+    }
 }
-
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -377,13 +479,23 @@ h3 {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Dosis|Fjalla+One|Julius+Sans+One|Quattrocento|Quicksand|Raleway|Roboto|Zilla+Slab+Highlight" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Dosis|Fjalla+One|Josefin+Sans|Julius+Sans+One|Quattrocento|Quicksand|Raleway|Roboto|Zilla+Slab+Highlight" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <meta charset="UTF-8">
     <title>Patrick O'Hara</title>
 </head>
 
 <body>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <center><h4 id="h4">This Project Is Under Construction!</h4>
+      <p><i class="material-icons large">report_problem</i></p>
+      <button class="modal-action modal-close btn-flat white">I Understand</button>
+    </div>
+  </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -392,9 +504,8 @@ h3 {
                         <ul id="nav-mobile">
                             <li id="list"><a class="smooth" href="#services">Services</a></li>
                             <li><a class="smooth" href="#about">About</a></li>
-                            
-                                <li><a class="smooth" href="#home">Home</a></li>
-                                <li><a class="smooth" href="#portfolio">Portfolio</a></li>
+                            <li><a class="smooth" href="#home">Home</a></li>
+                            <li><a class="smooth" href="#portfolio">Portfolio</a></li>
                             </a>
                             <li><a class="smooth" href="#contact">Contact</a></li>
                         </ul>
@@ -430,7 +541,7 @@ h3 {
         <div class="row">
             <div class="col s12">
                 <div class="main" id="services">
-                    <section id="snow" style="background-color:#4B0082">
+                    <section id="snow" style="background-color:#A9A9A9">
                         <div class="row">
                             <div class="col l6 s10">
                                 <h3>Hi, my name is Patrick. I create responsive, functional websites for personal and business needs. Here are a few services I provide --> </h3>
@@ -455,10 +566,10 @@ h3 {
         <div class="row">
             <div class="col s12">
                 <div class="main" id="about">
-                    <section id="snow" style="background-color:#4B0082">
+                    <section id="snow" style="background-color:black">
                         <div class="row">
                             <div class="col l6 s12">
-                                <center> <img id="filler" src="assets/images/me.jpg"></center>
+                                <center> <img id="filler" src="assets/images/mee.jpg"></center>
                             </div>
                             <div id="aboutme" class="col l5 s10">
                                 <h1>Patrick O'Hara</h1>
@@ -474,7 +585,7 @@ h3 {
         <div class="row">
             <div class="col s12">
                 <div class="main" id="portfolio">
-                    <section id="snow" style="background-color:#4B0082">
+                    <section id="snow" style="background-color:#A9A9A9">
                         <center>
                             <div class="row">
                                 <div class="col s12">
@@ -482,28 +593,16 @@ h3 {
                                 </div>
                             </div>
                         </center>
-                        <center><div class="row">
-                            <div class="col l4 s10">
-                                <img class="project" src="assets/images/pantry.png">
-                            </div>
-                            <div class="col l4 s10">
-                                <img class="project" src="assets/images/volunteer.png">
-                            </div>
-                            <div class="col l4 s10">
-                                <img class="project" src="assets/images/cheyna.png">
-                            </div>
-                        </div>
-                        <div class="back row">
-                            <div class="col l4 s10">
-                                <img class="project" src="assets/images/webscrape.png">
-                            </div>
-                            <div class="col l4 s10">
-                                <img class="project" src="assets/images/friend.png">
-                            </div>
-                            <div class="col l4 s10">
-                                <img class="project" src="assets/images/mrsleepy.png">
-                            </div>
-                        </div></center>
+                        <ul class="nav">
+                            <li><a href="https://pohara9720.github.io/Pantry-Chef/" title="Pantry Chef"><img src="assets/images/grocery.jpg" alt="" /></a></li>
+                            <li><a href="https://peaceful-brushlands-66642.herokuapp.com/" title="VolunteertoServe"><img src="assets/images/vol.jpg" alt="" /></a></li>
+                            <li><a href="https://pohara9720.github.io/CheynaCarr/index.html" title="Cheyna Carr"><img src="assets/images/g copy.jpg" alt="" /></a></li>
+                            <li><a class="modal-trigger" href="#modal2" title="WebScraper"><img src="assets/images/webscrape.png" alt="" /></a></li>
+                            <li><a href="https://enigmatic-garden-52092.herokuapp.com/" title="Friend-Finder"><img src="assets/images/friend.png" alt="" /></a></li>
+                            <li><a class="modal-trigger" href="#modal2" title="Mr.Sleepy"><img src="assets/images/alarm.jpg" alt="" /></a></li>
+                            <li><a class="modal-trigger" href="#modal2" title="B Photography"><img src="assets/images/photo.jpg" alt="" /></a></li>
+                            <li><a class="modal-trigger" href="#modal2" title="Vanja"><img src="assets/images/vs2 copy.jpg" alt="" /></a></li>
+                        </ul>
                     </section>
                 </div>
             </div>
@@ -511,7 +610,7 @@ h3 {
         <div class="row">
             <div class="col s12">
                 <div class="main" id="contact">
-                    <section id="snow" style="background-color:#4B0082">
+                    <section id="snow" style="background-color:black">
                         <center>
                             <div class="row">
                                 <div class="col s12">
@@ -533,31 +632,29 @@ h3 {
                                 <div class="col l2 s12">
                                     <a class="modal-trigger" href="#modal1"> <img class="icon" src="assets/images/bulb.png"></a>
                                     <p class="conList">Explain Your Idea</p>
-                                    <div id="modal1" class="modal modal-fixed-footer">
+                                    <div id="modal1" class="modal">
                                         <div class="modal-content">
                                             <h5>Tell me what you're thinking</h5>
-                                            <div class="row">
-                                                <form class="col s12">
-                                                    <div class="row">
-                                                        <div class="input-field col s6">
-                                                            <i class="material-icons prefix">account_circle</i>
-                                                            <input id="name" type="text" class="validate">
-                                                            <label for="icon_prefix">First Name</label>
-                                                        </div>
-                                                        <div class="input-field col s6">
-                                                            <i class="material-icons prefix">mail</i>
-                                                            <input id="number" type="email" class="validate">
-                                                            <label for="icon_telephone">Email</label>
-                                                        </div>
+                                            <form class="col s12">
+                                                <div class="row">
+                                                    <div class="input-field col s6">
+                                                        <i class="material-icons prefix">account_circle</i>
+                                                        <input id="name" type="text" class="validate">
+                                                        <label for="icon_prefix">First Name</label>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="input-field col s12">
-                                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                                            <label for="textarea1">Message</label>
-                                                        </div>
+                                                    <div class="input-field col s6">
+                                                        <i class="material-icons prefix">mail</i>
+                                                        <input id="number" type="email" class="validate">
+                                                        <label for="icon_telephone">Email</label>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                        <label for="textarea1">Message</label>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
                                             <center><a id="submit" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
@@ -598,7 +695,11 @@ h3 {
     <script>
     $(document).ready(function() {
         // Add smooth scrolling to all links
-
+        $("figure").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
 
 
         $(".smooth").on('click', function(event) {

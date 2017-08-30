@@ -22,7 +22,7 @@
 
     .st2 {
         fill: none;
-        stroke: #D3D3D3;
+        stroke: white;
         stroke-width: 3;
         stroke-linecap: round;
         stroke-miterlimit: 10;
