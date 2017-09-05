@@ -406,9 +406,7 @@ span {
     .container {
         width: 85%;
     }
-    .row{
-        margin-bottom: 0px !important;
-    }
+    
     #footer {
         background-color: #a9a9a9 !important;
     }
@@ -506,6 +504,17 @@ span {
     h1 {
         margin-right: -60px !important;
     }
+    @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+{ 
+.row{
+        margin-bottom: 0px !important;
+    }
+    
+}
 }
 </style>
 <!DOCTYPE html>
