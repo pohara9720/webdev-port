@@ -227,14 +227,17 @@ form {
 }
 
 
+
 /*
 .card {
     height: 300px;
     width: 300px;
 }*/
-#servList{
+
+#servList {
     margin-top: 70px;
 }
+
 object {
     text-align: center;
 }
@@ -405,18 +408,30 @@ span {
         background-color: #a9a9a9;
         width: 100%;
     }
-    .main{
+    .main {
         background-color: #a9a9a9;
         width: 100%;
     }
+    .snow {
+    background: none;
+    background-image: url(http://hk.celavi.com/thesuit/uploads/2015/11/feather.png), url(http://hk.celavi.com/thesuit/uploads/2015/11/feather.png), url(http://hk.celavi.com/thesuit/uploads/2015/11/feather.png);
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    -webkit-animation: snow 80s linear infinite;
+
+    animation: snow 80s linear infinite;
+}
+
     .container {
         width: 100% !important;
     }
-    .row{
+    .row {
         margin-bottom: 0px !important;
     }
 
-    
+
     #footer {
         background-color: #a9a9a9 !important;
     }
@@ -427,11 +442,9 @@ span {
         visibility: visible;
         height: 100%;
         background-color: #a9a9a9 !important;
-
     }
-    #small .col.s12{
-                background-color: #a9a9a9 !important;
-
+    #small .col.s12 {
+        background-color: #a9a9a9 !important;
     }
     .smallimg {
         display: block;
@@ -444,6 +457,12 @@ span {
         font-family: 'Quicksand', sans-serif;
         text-decoration-line: underline;
     }
+    .icon {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+    }
+
 
     .nav {
         display: none;
@@ -517,7 +536,6 @@ span {
         color: #D3D3D3;
         text-align: center;
         margin-right: -55px;
-
     }
     /*.row .col {
     padding: 0px !important;
@@ -526,31 +544,25 @@ span {
         margin-right: -60px !important;
     }
     #modal1,
-.modal-footer {
-    background-color: grey !important;
-    text-align: center;
-    margin-bottom: -100px;
-    height: 50px;
-}
-h4{
-    font-size: 30px !important;
-}
-#servList{
-    margin-left: 20px;
-    margin-top: 0px;
-    width: 90%;
-}
-    @media only screen 
-    and (min-device-width : 414px) 
-    and (max-device-width : 736px) 
-    and (orientation : landscape) 
-    and (-webkit-min-device-pixel-ratio : 3) 
-{ 
-.row{
-        margin-bottom: 0px !important;
+    .modal-footer {
+        background-color: grey !important;
+        text-align: center;
+        margin-bottom: -100px;
+        height: 50px;
     }
-    
-}
+    h4 {
+        font-size: 30px !important;
+    }
+    #servList {
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 90%;
+    }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+        .row {
+            margin-bottom: 0px !important;
+        }
+    }
 }
 </style>
 <!DOCTYPE html>
@@ -625,7 +637,7 @@ h4{
                                 <h3>Hi, my name is Patrick. I create responsive, functional websites for personal and business needs. Here are a few services I provide --> </h3>
                             </div>
                             <div id="snow" class="main col l6 s12">
-                                <ul id="servList">
+                                <ul id="servList" class="snow main">
                                     <li class="fontS"><img class="aIcon" src="assets/images/design.png"> WEB DESIGN</li>
                                     <p class="pServ">Websites are built from scratch and allow endless possibilities to make a completely customizeable experience.</p>
                                     <li class="fontS"><img class="aIcon" src="assets/images/app.png">MOBILE APPS</li>
