@@ -417,7 +417,54 @@ span {
 #small {
     display: none;
 }
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
 
+
+.container{
+    width:100%;
+}
+
+#small {
+        display: block;
+        visibility: visible;
+        height: 100%;
+        background-color: #a9a9a9 !important;
+    }
+    .smallimg {
+        display: block;
+        visibility: visible;
+        height: 300px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .nav {
+        display: none;
+    }
+    #list{
+        margin-left: 230px !important;
+    }
+    #servList{
+        margin-left: 50px;
+    }
+    #summary{
+        margin-left: 90px;
+        text-align: center;
+    }
+    h1{
+        margin-right: -100px !important; 
+        text-align: center;
+    }
+    .row .col.s12{
+        margin-bottom: 0px !important;
+    }
+    .port{
+        margin-top: -70px !important;
+        display: none;
+    }
+
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     body,
     html,
@@ -708,27 +755,27 @@ span {
                         </center>
                         <center>
                             <div id="small" class="main row">
-                                <div class="col s12">
+                                <div class="col m6 s12">
                                     <p class="smalltits">Pantry Chef</p>
                                     <a href="https://pohara9720.github.io/Pantry-Chef/" title="Pantry Chef"><img class="smallimg" src="assets/images/smallgroc.jpg" alt="" /></a>
                                 </div>
-                                <div class="col s12">
+                                <div class="col m6 s12">
                                     <p class="smalltits">VolunteerToServe</p>
                                     <a href='https://peaceful-brushlands-66642.herokuapp.com/' title="VolunteertoServe"><img class="smallimg" src="assets/images/vol.jpg" alt="" /></a>
                                 </div>
-                                <div class="col s12">
+                                <div class="col m6 s12">
                                     <p class="smalltits">Cheyna Carr Photography</p>
                                     <a href="https://pohara9720.github.io/CheynaCarr/index.html" title="Cheyna Carr"><img class="smallimg" src="assets/images/d2 copy.jpg" alt="" /></a>
                                 </div>
-                                <div class="col s12">
+                                <div class="col m6 s12">
                                     <p class="smalltits">Friend-Finder</p>
                                     <a href="https://enigmatic-garden-52092.herokuapp.com/" title="Friend-Finder"><img class="smallimg" src="assets/images/friend.png" alt="" /></a>
                                 </div>
-                                <div class="col s12">
+                                <div class="col m6 s12">
                                     <p class="smalltits">Mr.Sleepy</p>
                                     <a title="Mr.Sleepy"><img class="smallimg modal-trigger" href="#modal2" src="assets/images/smallclock.jpg" alt="" /></a>
                                 </div>
-                                <div class="col s12">
+                                <div class="col m6 s12">
                                     <p class="smalltits">Web Scraper</p>
                                     <a title="WebScraper"><img class="smallimg modal-trigger" href="#modal2" src="assets/images/webscrape.png" alt="" /></a>
                                 </div>
@@ -762,21 +809,21 @@ span {
                             <div class="row">
                                 <div class="col l1 s12">
                                 </div>
-                                <div class="col l2 s12">
+                                <div class="col l2 m6 s12">
                                     <a href="tel:16235708427"><img class="icon" src="assets/images/phone.png"></a>
                                     <p class="conList">Phone</p>
                                 </div>
-                                <div class="col l2 s12">
+                                <div class="col l2 m6 s12">
                                     <a href="mailto:pat.oharaiv@gmail.com"><img class="icon" src="assets/images/email.png"></a>
                                     <p class="conList">Email</p>
                                 </div>
-                                <div class="col l2 s12">
+                                <div class="col l2 m6 s12">
                                     <a class="modal-trigger" href="#modal1"> <img class="icon" src="assets/images/bulb.png"></a>
                                     <p class="conList">Explain Your Idea</p>
                                     <div id="modal1" class="modal">
                                         <div class="modal-content">
                                             <h5>Tell me what you're thinking</h5>
-                                            <form class="col s12">
+                                            <form class="col m6 s12">
                                                 <div class="row">
                                                     <div class="input-field col l6 s12">
                                                         <i class="material-icons prefix">account_circle</i>
@@ -803,11 +850,11 @@ span {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l2 s12">
+                                <div class="col l2 m6 s12">
                                     <a href="https://www.linkedin.com/in/patoharaiv/"><img class="icon" src="assets/images/address-book.png"></a>
                                     <p class="conList">LinkedIn</p>
                                 </div>
-                                <div class="col l2 s12">
+                                <div class="col l2 m6 s12">
                                     <a href="https://github.com/pohara9720"><img class="icon" src="assets/images/gitlogo.png"></a>
                                     <p class="conList">Github</p>
                                 </div>
